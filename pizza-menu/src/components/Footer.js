@@ -1,7 +1,8 @@
+ import {Order} from './Order'
  export function Footer(){
     const hour = new Date().getHours();
     const openHour =9;
-    const closeHour = 20;
+    const closeHour = 22;
     const isOpen = hour >= openHour && hour < closeHour;
     return(
         <footer className="footer">
@@ -13,7 +14,7 @@
                 <span className="closed">Cerrado</span>
             )}</p> */}
             <p>{isOpen ? (
-                <span className="open">Abierto</span>
+                <Order closeHours={closeHour}/>
             ) : (
                 <span className="closed">Cerrado</span>
             )}</p>

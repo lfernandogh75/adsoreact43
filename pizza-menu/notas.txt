@@ -1,3 +1,7 @@
 npx create-react-app@5 pizza-menu
 cd pizza-menu
 npm start
+
+recuperar un proyecto clonado npm ci
+
+

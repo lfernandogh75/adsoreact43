@@ -9,10 +9,11 @@ import {Menu} from './components/Menu';
 function App() {
   return (
     <>
+    <div className='container'>
     <Header/>
    <Menu/>
    <Footer/>
-  
+   </div>
    </>
   );
 }
