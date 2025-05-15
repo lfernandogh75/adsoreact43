@@ -4,12 +4,16 @@ const initialItems=[
     {id:2, description:"socks", quantity:12,packed:true},
     {id:3, description:"charger", quantity:1,packed:false},
 ]
-export function PackingList(){
+export function PackingList({items, onDeleteItem,onToggleItem}){
     return(
         <div className="list">
             <ul>
-                {initialItems.map(item =>(
-                    <Item item={item} key={item.id}/>
+                {items.map(item =>(
+                    <Item 
+                    item={item}
+                     key={item.id}
+                      onDeleteItem={onDeleteItem}
+                      onToggleItem={onToggleItem}/>
                 ))}
             </ul>
         </div>

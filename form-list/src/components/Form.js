@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-export function Form(){
+export function Form({onAddItems}){
     const[description,setDescription]=useState("");
     const[quantity,setQuatity]=useState(1);
-    const[items,setItems]=useState([]);
-    function handleAddItem(item){
-        setItems((items)=>[...items,item]);
-    }
+    //const[items,setItems]=useState([]);
+    // function handleAddItem(item){
+    //     setItems((items)=>[...items,item]);
+    // }
 function handleSumit(e){
     e.preventDefault();
     if(!description) return;
@@ -16,7 +16,8 @@ function handleSumit(e){
         packed:false,
     };
     console.log(newItem);
-    handleAddItem(newItem);
+  //  handleAddItem(newItem);
+  onAddItems(newItem);
     setDescription("");
     setQuatity(1);
 }

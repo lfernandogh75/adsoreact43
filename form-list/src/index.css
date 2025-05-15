@@ -190,7 +190,8 @@ input {
 
   width: 80%;
 
-  overflow: scroll;
+  /* overflow: scroll; */
+  overflow: hidden;
 
  
 
