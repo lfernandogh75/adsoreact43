@@ -1,0 +1,4 @@
+npm init -y
+npm install express mongoose multer sharp jsonwebtoken bcryptjs cors dotenv
+npm i nodemon --save-dev
+npm i sharp
