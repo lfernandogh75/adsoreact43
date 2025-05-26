@@ -12,7 +12,7 @@ exports.createProduct = async (req,res)=>{
         .resize(800,800)
         .jpeg({quality:80})
         .toBuffer();
-        const imageName=name;
+        const imageName=`${name}.jpg`;
         const imagePath = path.join(__dirname,"../public/images",imageName);
         fs.writeFileSync(imagePath,optimizedImage);
         const product = new Product({
