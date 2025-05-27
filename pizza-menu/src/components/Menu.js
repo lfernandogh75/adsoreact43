@@ -2,19 +2,8 @@ import {Pizza} from './Pizza';
 //import {pizzaData} from '../data';
 import { getPizzaData } from '../databd';
 import { useState,useEffect } from 'react';
-export function Menu(){
-  const [pizzaData,setPizzaData]=useState([]);
-  useEffect(()=>{
-    async function fetchData(){
-      try{
-          const pizzaData2 = await getPizzaData();
-          setPizzaData(pizzaData2);
-    }catch(error){
-      console.error('Error al obtener las pizzas:',error);
-    }
-    }fetchData();
-    
-  },[]);
+export function Menu({pizzaData}){
+ 
   
   return(
      <main className='menu'>
