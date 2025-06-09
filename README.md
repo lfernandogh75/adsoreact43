@@ -5,3 +5,5 @@ npm run dev
 
 mr
 lrc
+https://primer.style/octicons/
+npm install @primer/octicons-react
