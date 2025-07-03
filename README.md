@@ -19,3 +19,7 @@ cd my-dashboard
 npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init -p
 npm run dev
+
+recuper proyecto npm ci
+
+https://react-icons.github.io/react-icons/
