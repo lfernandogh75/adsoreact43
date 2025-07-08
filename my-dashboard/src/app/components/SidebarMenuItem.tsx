@@ -1,3 +1,6 @@
+'use client'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { JSX } from "react";
 interface Props{
     path:string;
@@ -6,8 +9,11 @@ interface Props{
    subTitle:string;
 }
 const SidebarMenuItem=({path,icon,title,subTitle}:Props)=>{
+    const currenntPath=usePathname();
     return(
-       <a href={path} className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
+       <Link href={path} className={`w-full px-2 inline-flex space-x-2 items-center border-b
+        border-slate-700 py-3  hover:bg-white/5 transition ease-linear duration-150
+        ${currenntPath===path? 'bg-blue-800':""}`}>
                 <div>
                     {icon}  
                 </div>
@@ -15,7 +21,7 @@ const SidebarMenuItem=({path,icon,title,subTitle}:Props)=>{
                     <span className="text-lg font-bold leading-5 text-white">{title}</span>
                     <span className="text-sm text-white/50 hidden md:block">{subTitle}</span>
                 </div>
-            </a>
+            </Link>
     )
 }
 export default SidebarMenuItem
