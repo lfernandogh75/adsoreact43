@@ -1,0 +1,10 @@
+ver versión
+ >dotnet --version
+ lista de versiones 
+ >dotnet --list-sdks
+ lista de proyectos
+>dotnet new -l
+  crea una solución y un directorio
+>dotnet new sln -o HospiEnCasa.App
+crear proyecto de libreriá de clases
+dotnet new classlib -o HospiEnCasa.App.Dominio --framework net5.0
