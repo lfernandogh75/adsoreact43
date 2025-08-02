@@ -25,3 +25,4 @@ recuper proyecto npm ci
 https://react-icons.github.io/react-icons/
 si genera error import {SidebarMenuItem} from './SidebarMenuItem';
 cambie por import {default as SidebarMenuItem} from './SidebarMenuItem';
+prueba commit jeferson
