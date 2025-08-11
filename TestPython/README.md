@@ -10,7 +10,7 @@ pip list
 python.exe -m pip install --upgrade pip
 pip install pytest
 ```
-Comando|Descripción
-|-|-|
-pip list|ver librerias instaladas
-pip install pytest|libreria para pruebas
+| Comando            | Descripción              |
+| ------------------ | ------------------------ |
+| pip list           | ver librerias instaladas |
+| pip install pytest | libreria para pruebas    |
